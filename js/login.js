@@ -14,8 +14,8 @@ document.getElementById('btn-submit').addEventListener('click',function(event){
     //Danger: do not verify user email & password on the client side
     //verify email and password
     if( email === 'sontan@baap.com' && password === 'secret'){
-        console.log('Valid user');
+        window.location.href = 'bank.html';
     }else{
-        console.log('invalid user');
+        alert('Tui email/password vuule gesis tai tore ami tejjo ghosona korlam!!!');
     }
-})
+});
